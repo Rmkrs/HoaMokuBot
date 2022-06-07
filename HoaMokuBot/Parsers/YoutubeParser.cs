@@ -1,15 +1,24 @@
 namespace HoaMokuBot.Parsers
 {
+    using AppSettings;
     using Contracts;
     using Google.Apis.Services;
     using Google.Apis.YouTube.v3;
+    using Microsoft.Extensions.Options;
 
     public class YoutubeParser : IYoutubeParser
     {
+        private readonly YoutubeSettings settings;
+
+        public YoutubeParser(IOptions<Settings> settings)
+        {
+            this.settings = settings.Value.Youtube;
+        }
+
         public async Task<List<string>> Parse(string youtubePlaylistUrl)
         {
             var results = new List<string>();
-            var service = new YouTubeService(new BaseClientService.Initializer() { ApiKey = "AIzaSyAtOtY0gLQYTnuRzTlKCU59vRoXHikCP2o" });
+            var service = new YouTubeService(new BaseClientService.Initializer() { ApiKey = settings.ApiKey });
             
             var uri = new Uri(youtubePlaylistUrl);
             var parameters = uri.Query.TrimStart('?')
