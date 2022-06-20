@@ -33,28 +33,28 @@ Features a Custom Playlist handler:
 
 
 Extra Features:
-Can be configured to automatically Join a voice channel when the first user connects
-And automatically Leasve a voice channel when the last user leaves the channel
+- Can be configured to automatically Join a voice channel when the first user connects
+- And automatically Leave a voice channel when the last user leaves the channel
 
 
 Available Chat Commands:
-!Join - Make the MusicBot join your current voice channel
-!Leave - Make the MusicBot leave your current voice channel
-!Play - Start playing from the queue
-!Search, Add, Find - Search for a song
-!Pause - Pause the currently playing song
-!Resume - Resume the currently paused song
-!Stop - Stop playing music
-!Seek - Seeks the currently playing song to the specified position
-!Volume - Sets the volume of the MusicBot
-!NowPlaying, Np - Display information about the currently playing song
-!Skip, Next - Skips the currently playing song
-!Load - Loads a previously saved playlist
-!Save - Saves a playlist
-!Clear - Clear all tracks from the playlist
-!Playlists - Shows all the saved playlists
-!Songs - Displays all songs in current playlist
-!AutoJoin - Auto Join's the MusicBot to a voice channel.
+- !Join - Make the MusicBot join your current voice channel
+- !Leave - Make the MusicBot leave your current voice channel
+- !Play - Start playing from the queue
+- !Search, Add, Find - Search for a song
+- !Pause - Pause the currently playing song
+- !Resume - Resume the currently paused song
+- !Stop - Stop playing music
+- !Seek - Seeks the currently playing song to the specified position
+- !Volume - Sets the volume of the MusicBot
+- !NowPlaying, Np - Display information about the currently playing song
+- !Skip, Next - Skips the currently playing song
+- !Load - Loads a previously saved playlist
+- !Save - Saves a playlist
+- !Clear - Clear all tracks from the playlist
+- !Playlists - Shows all the saved playlists
+- !Songs - Displays all songs in current playlist
+- !AutoJoin - Auto Join's the MusicBot to a voice channel.
 
 Makes use of:
 - .NET 6.0
